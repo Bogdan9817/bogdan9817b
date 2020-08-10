@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+
+
+header{
+    background-color: #1d2126;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    margin: 15px;
+    padding: -15px;
+    width: 1170px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.col-md-3{
+    width: 33%;
+    margin: 15px;
+    padding: -15px;
+}
+.col-md-6{
+    width: 66%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.col-md-6>ul{
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+li { display: flex;
+    height: 30px;
+    padding-left: 8px;
+    padding-right: 11px;
+}
+.col-md-6>ul>li:first-child{
+    border: 1px solid #39a492;
+    border-radius: 5px;
+
+}
+.col-md-6>ul>li:first-child>a{
+    color: #39a492;
+}
+a{  align-self: center;
+    text-decoration: none;
+    color: #ad9c9b;
+  
+    font-size: 14px;
+}
+
+li:hover {
+    border: 1px solid #ad9c9b;
+    border-radius: 5px;
+}
+.col-md-3{
+    display: flex;
+    margin: 0;
+   
+  
+}
+.searchingWindow{ width: 195px;
+     height: 30px;
+    border: 2px solid #ad9c9b;
+    border-radius: 5px;
+    display: flex; 
+    align-self: center;
+   
+    
+}
+form>input{
+    background-color: #1d2126;
+    border: none;
+}
+button{
+    background-color: #1d2126;
+    display: flex;
+    border: none;
+    
+}
+button>img{
+    display: flex;
+    align-self: center;
+}
+.background{margin-top: 0;
+    background-image: url(img\ \(2\).png);
+    width: 100%;
+    height: 660px;
+    display: flex;
+    justify-content: center;
+}
+.col-md-12{display: flex;
+    width: 1170px;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    color: #ffe5e5;
+   
+}
+.col-md-12>form>input{
+   background-color: rgba(57, 164, 147, 0 );
+   border: 1px solid #ffe5e5;
+   border-radius: 5px;
+   margin-right: 10px;
+   width: 125px;
+   height: 44px;
+   font-size: 14px;
+   text-align: center;
+   color: #ffe5e5;
+}
+.col-md-12>form>input:hover{
+    background-color: rgba(57, 164, 147, 1);
+    border-color: rgba(57, 164, 147, 1);
+    
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+}
+.col-md-7{
+    display: flex ;
+    flex-direction: column;
+    justify-content: start;
+    
+}
+.col-md-7>form>img{
+    background-color: #c8cdd0 ;
+}
+.ol{
+    display: flex;
+    flex-direction: row;
+}
+.col-md-5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.number{ 
+    width: 67px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.number>h3{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(57, 164, 147, 1);
+    background-color: rgba(57, 164, 147, 1);
+    color: white;
+}
+.list{ 
+    width: 404px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.list>p{
+    color: #8d8f92;
+}
+@media(min-width: 900px){
+    header{
+        height: 300px;
+        
+    }
+    .container{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .col-md-3:first-child{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .col-md-6{
+        
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        
+    }
+    .col-md-3:last-child{
+        width: 0;
+    }
+    .col-md-6>ul{
+        flex-direction: column;
+    }
+    .searchingWindow{
+        opacity: 0;
+    }
+    .container2{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 500px;
+    }
+    .number {
+        height: 300px;
+    }
+    .list{
+        height: 300px;
+       
+    }
+    .list>h3{
+        margin: 5px;
+    }
+    
+}
+
+
+
